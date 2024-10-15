@@ -1,4 +1,7 @@
 import "package:animations_1/pages/animated_alignment.dart";
+import "package:animations_1/pages/animated_container.dart";
+import "package:animations_1/pages/animated_text_demo.dart";
+import "package:animations_1/widgets/lesson_navigation_button.dart";
 import "package:flutter/material.dart";
 
 void main() {
@@ -32,26 +35,30 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Lessons"),
+        title: const Text("Flutter Animations Course"),
+        centerTitle: true,
       ),
-      body: SizedBox(
+      body: const SizedBox(
         width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const AnimatedAlignment(),
-                ));
-              },
-              style: ElevatedButton.styleFrom(
-                minimumSize: const Size(double.infinity, 50),
-                backgroundColor: Colors.blueAccent,
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              LessonNavigationButton(
+                buttonText: "Animated Alignment",
+                navigateToPage: AnimatedAlignment(),
               ),
-              child: const Text("Animated Alignment"),
-            ),
-          ],
+              LessonNavigationButton(
+                buttonText: "Animated Container",
+                navigateToPage: AnimatedContainerDemo(),
+              ),
+              LessonNavigationButton(
+                buttonText: "Animated Default TextStyle",
+                navigateToPage: AnimatedTextDemo(),
+              ),
+            ],
+          ),
         ),
       ),
     );
