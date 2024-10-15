@@ -1,5 +1,8 @@
 import "package:animations_1/pages/animated_alignment.dart";
 import "package:animations_1/pages/animated_container.dart";
+import "package:animations_1/pages/animated_opacity_demo.dart";
+import "package:animations_1/pages/animated_padding.dart";
+import "package:animations_1/pages/animated_physical_model.dart";
 import "package:animations_1/pages/animated_text_demo.dart";
 import "package:animations_1/widgets/lesson_navigation_button.dart";
 import "package:flutter/material.dart";
@@ -56,6 +59,18 @@ class _HomePageState extends State<HomePage> {
               LessonNavigationButton(
                 buttonText: "Animated Default TextStyle",
                 navigateToPage: AnimatedTextDemo(),
+              ),
+              LessonNavigationButton(
+                buttonText: "Animated Opacity",
+                navigateToPage: AnimatedOpacityDemo(),
+              ),
+              LessonNavigationButton(
+                buttonText: "Animated Padding",
+                navigateToPage: AnimatedPaddingDemo(),
+              ),
+              LessonNavigationButton(
+                buttonText: "Animated Physical Model",
+                navigateToPage: AnimatedPhysicalModelDemo(),
               ),
             ],
           ),
