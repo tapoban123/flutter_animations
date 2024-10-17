@@ -1,17 +1,7 @@
-import "package:animations_1/pages/animated_alignment.dart";
-import "package:animations_1/pages/animated_container.dart";
-import "package:animations_1/pages/animated_cross_fade.dart";
-import "package:animations_1/pages/animated_icon_demo.dart";
-import "package:animations_1/pages/animated_opacity_demo.dart";
-import "package:animations_1/pages/animated_padding.dart";
-import "package:animations_1/pages/animated_physical_model.dart";
-import "package:animations_1/pages/animated_positioned_demo.dart";
-import "package:animations_1/pages/animated_positioned_directional.dart";
-import "package:animations_1/pages/animated_switcher_demo.dart";
-import "package:animations_1/pages/animated_text_demo.dart";
-import "package:animations_1/widgets/lesson_navigation_button.dart";
+import "package:animations_1/explicit_animations/explicit_animations_home.dart";
+import "package:animations_1/implicit_animations/implicit_animations_home.dart";
+import "package:animations_1/widgets/animation_navigation_button.dart";
 import "package:flutter/material.dart";
-import "package:flutter/widgets.dart";
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,59 +37,26 @@ class _HomePageState extends State<HomePage> {
         title: const Text("Flutter Animations Course"),
         centerTitle: true,
       ),
-      body: SizedBox(
-        width: double.infinity,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
-          child: ListView(
-            physics: const BouncingScrollPhysics(),
-            children: const [
-              LessonNavigationButton(
-                buttonText: "Animated Alignment",
-                navigateToPage: AnimatedAlignment(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Container",
-                navigateToPage: AnimatedContainerDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Default TextStyle",
-                navigateToPage: AnimatedTextDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Opacity",
-                navigateToPage: AnimatedOpacityDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Padding",
-                navigateToPage: AnimatedPaddingDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Physical Model",
-                navigateToPage: AnimatedPhysicalModelDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Positioned",
-                navigateToPage: AnimatedPositionedDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Positioned Directional",
-                navigateToPage: AnimatedPositionedDirectionalDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Icon Demo",
-                navigateToPage: AnimatedIconDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Cross Fade Demo",
-                navigateToPage: AnimatedCrossFadeDemo(),
-              ),
-              LessonNavigationButton(
-                buttonText: "Animated Switcher Demo",
-                navigateToPage: AnimatedSwitcherDemo(),
-              ),
-            ],
-          ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+        child: ListView(
+          children: const [
+            AnimationNavigationButton(
+              buttonColor: Colors.orangeAccent,
+              buttonText: "Implicit Animations",
+              navigateToPage: ImplicitAnimationsHome(),
+            ),
+            AnimationNavigationButton(
+              buttonColor: Colors.purpleAccent,
+              buttonText: "Explicit Animations",
+              navigateToPage: ExplicitAnimationsHome(),
+            ),
+            AnimationNavigationButton(
+              buttonColor: Colors.greenAccent,
+              buttonText: "Page Transition Animations",
+              navigateToPage: ImplicitAnimationsHome(),
+            ),
+          ],
         ),
       ),
     );
