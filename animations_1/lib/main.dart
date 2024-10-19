@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Animations Tutorial",
+      
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(useMaterial3: true),
       home: const HomePage(),
