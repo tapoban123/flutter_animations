@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedContainerDemo extends StatefulWidget {
@@ -35,7 +36,7 @@ class _AnimatedContainerDemoState extends State<AnimatedContainerDemo> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Image.asset(
-                  "assets/images/Jerry_Mouse.png",
+                  ImagePaths.jerryImage,
                   fit: BoxFit.contain,
                 ),
               ),

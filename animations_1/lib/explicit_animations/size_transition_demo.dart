@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class SizeTransitionDemo extends StatefulWidget {
@@ -58,7 +59,7 @@ class _SizeTransitionDemoState extends State<SizeTransitionDemo>
                   color: Colors.amberAccent,
                   borderRadius: BorderRadius.circular(16),
                 ),
-                child: Image.asset("assets/images/Jerry_Mouse.png"),
+                child: Image.asset(ImagePaths.jerryImage),
               ),
             ),
           ],

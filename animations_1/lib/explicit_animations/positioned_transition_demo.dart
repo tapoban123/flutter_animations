@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class PositionedTransitionDemo extends StatefulWidget {
@@ -72,7 +73,7 @@ class _PositionedTransitionDemoState extends State<PositionedTransitionDemo>
                 width: 100,
                 height: 100,
                 color: Colors.amber,
-                child: Image.asset("assets/images/spike.png"),
+                child: Image.asset(ImagePaths.spikeImage),
               ),
             ),
             PositionedTransition(
@@ -81,7 +82,7 @@ class _PositionedTransitionDemoState extends State<PositionedTransitionDemo>
                 width: 100,
                 height: 100,
                 color: Colors.blue,
-                child: Image.asset("assets/images/Tom_Cat.png"),
+                child: Image.asset(ImagePaths.tomImage),
               ),
             ),
             PositionedTransition(
@@ -90,7 +91,7 @@ class _PositionedTransitionDemoState extends State<PositionedTransitionDemo>
                 width: 100,
                 height: 100,
                 color: Colors.green,
-                child: Image.asset("assets/images/Jerry_Mouse.png"),
+                child: Image.asset(ImagePaths.jerryImage),
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class RotationTransitionDemo extends StatefulWidget {
@@ -50,7 +51,7 @@ class _RotationTransitionDemoState extends State<RotationTransitionDemo>
               borderRadius: BorderRadius.circular(14),
               color: Colors.blueGrey,
             ),
-            child: Image.asset("assets/images/Tom_Cat.png"),
+            child: Image.asset(ImagePaths.tomImage),
           ),
         ),
       ),

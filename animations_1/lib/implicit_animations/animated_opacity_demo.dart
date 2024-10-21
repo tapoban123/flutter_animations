@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedOpacityDemo extends StatefulWidget {
@@ -45,7 +46,7 @@ class _AnimatedOpacityDemoState extends State<AnimatedOpacityDemo> {
               child: SizedBox(
                 width: 100,
                 height: 100,
-                child: Image.asset("assets/images/Jerry_Mouse.png"),
+                child: Image.asset(ImagePaths.jerryImage),
               ),
             ),
             AnimatedOpacity(
@@ -55,7 +56,7 @@ class _AnimatedOpacityDemoState extends State<AnimatedOpacityDemo> {
               child: SizedBox(
                 width: 100,
                 height: 100,
-                child: Image.asset("assets/images/Tom_Cat.png"),
+                child: Image.asset(ImagePaths.tomImage),
               ),
             ),
           ],

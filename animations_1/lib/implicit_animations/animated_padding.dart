@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedPaddingDemo extends StatefulWidget {
@@ -37,7 +38,7 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
                 color: Colors.amber,
                 width: 100,
                 height: 100,
-                child: Image.asset("assets/images/Jerry_Mouse.png"),
+                child: Image.asset(ImagePaths.jerryImage),
               ),
             ),
             AnimatedPadding(
@@ -49,7 +50,7 @@ class _AnimatedPaddingDemoState extends State<AnimatedPaddingDemo> {
                 color: Colors.amberAccent,
                 width: 100,
                 height: 100,
-                child: Image.asset("assets/images/Tom_Cat.png"),
+                child: Image.asset(ImagePaths.tomImage),
               ),
             ),
           ],

@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedPositionedDemo extends StatefulWidget {
@@ -33,7 +34,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
               SizedBox(
                 width: 120,
                 height: 120,
-                child: Image.asset("assets/images/cheese.png"),
+                child: Image.asset(ImagePaths.cheeseImage),
               ),
               AnimatedPositioned(
                 duration: const Duration(milliseconds: 500),
@@ -41,7 +42,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
                 child: SizedBox(
                   width: 120,
                   height: 120,
-                  child: Image.asset("assets/images/Tom_Cat.png"),
+                  child: Image.asset(ImagePaths.tomImage),
                 ),
               ),
               AnimatedPositioned(
@@ -50,7 +51,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
                 child: SizedBox(
                   width: 120,
                   height: 120,
-                  child: Image.asset("assets/images/Jerry_Mouse.png"),
+                  child: Image.asset(ImagePaths.jerryImage),
                 ),
               ),
               AnimatedPositioned(
@@ -60,7 +61,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
                 child: SizedBox(
                   width: 120,
                   height: 120,
-                  child: Image.asset("assets/images/droopy.png"),
+                  child: Image.asset(ImagePaths.droopyImage),
                 ),
               ),
               AnimatedPositioned(
@@ -70,7 +71,7 @@ class _AnimatedPositionedDemoState extends State<AnimatedPositionedDemo> {
                 child: SizedBox(
                   width: 120,
                   height: 120,
-                  child: Image.asset("assets/images/spike.png"),
+                  child: Image.asset(ImagePaths.spikeImage),
                 ),
               ),
             ],

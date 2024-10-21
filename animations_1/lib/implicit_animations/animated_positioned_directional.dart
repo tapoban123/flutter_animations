@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedPositionedDirectionalDemo extends StatefulWidget {
@@ -66,7 +67,7 @@ class _AnimatedPositionedDirectionalDemoState
               child: SizedBox(
                 height: 100,
                 width: 100,
-                child: Image.asset("assets/images/Jerry_Mouse.png"),
+                child: Image.asset(ImagePaths.jerryImage),
               ),
             ),
             Row(

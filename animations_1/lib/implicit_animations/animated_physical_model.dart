@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedPhysicalModelDemo extends StatefulWidget {
@@ -34,7 +35,7 @@ class _AnimatedPhysicalModelDemoState extends State<AnimatedPhysicalModelDemo> {
           child: SizedBox(
             width: 200,
             height: 200,
-            child: Image.asset("assets/images/Tom_Cat.png"),
+            child: Image.asset(ImagePaths.tomImage),
           ),
         ),
       ),

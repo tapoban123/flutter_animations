@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedAlignment extends StatefulWidget {
@@ -33,7 +34,7 @@ class _AnimatedAlignmentState extends State<AnimatedAlignment> {
               width: 100,
               height: 100,
               color: Colors.transparent,
-              child: Image.asset("assets/images/Jerry_Mouse.png"),
+              child: Image.asset(ImagePaths.jerryImage),
             ),
           ),
           AnimatedAlign(
@@ -43,7 +44,7 @@ class _AnimatedAlignmentState extends State<AnimatedAlignment> {
               width: 100,
               height: 100,
               color: Colors.transparent,
-              child: Image.asset("assets/images/Tom_Cat.png"),
+              child: Image.asset(ImagePaths.tomImage),
             ),
           ),
         ],

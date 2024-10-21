@@ -1,3 +1,4 @@
+import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedCrossFadeDemo extends StatefulWidget {
@@ -33,8 +34,8 @@ class _AnimatedCrossFadeDemoState extends State<AnimatedCrossFadeDemo> {
                     ? CrossFadeState.showSecond
                     : CrossFadeState.showFirst,
                 duration: const Duration(milliseconds: 500),
-                firstChild: Image.asset("assets/images/Tom_Cat.png"),
-                secondChild: Image.asset("assets/images/Jerry_Mouse.png"),
+                firstChild: Image.asset(ImagePaths.tomImage),
+                secondChild: Image.asset(ImagePaths.jerryImage),
               ),
             ),
           ),
