@@ -1,4 +1,3 @@
-import 'package:animations_1/utils/image_paths.dart';
 import 'package:flutter/material.dart';
 
 class AnimatedPositionDirectionalDemo extends StatefulWidget {

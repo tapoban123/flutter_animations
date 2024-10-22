@@ -1,5 +1,6 @@
 import "package:animations_1/explicit_animations/explicit_animations_home.dart";
 import "package:animations_1/implicit_animations/implicit_animations_home.dart";
+import "package:animations_1/page_transitions/page_transitions_home.dart";
 import "package:animations_1/widgets/animation_navigation_button.dart";
 import "package:flutter/material.dart";
 
@@ -55,7 +56,7 @@ class _HomePageState extends State<HomePage> {
             AnimationNavigationButton(
               buttonColor: Colors.greenAccent,
               buttonText: "Page Transition Animations",
-              navigateToPage: ImplicitAnimationsHome(),
+              navigateToPage: PageTransitionsHome(),
             ),
           ],
         ),

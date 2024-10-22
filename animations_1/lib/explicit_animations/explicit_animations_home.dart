@@ -1,6 +1,8 @@
 import 'package:animations_1/explicit_animations/animated_builder_demo.dart';
 import 'package:animations_1/explicit_animations/animated_position_directional_demo.dart';
+import 'package:animations_1/explicit_animations/default_textstyle_transition_demo.dart';
 import 'package:animations_1/explicit_animations/fade_animation_demo.dart';
+import 'package:animations_1/explicit_animations/indexed_stack_transition_demo.dart';
 import 'package:animations_1/explicit_animations/positioned_transition_demo.dart';
 import 'package:animations_1/explicit_animations/rotation_transition_demo.dart';
 import 'package:animations_1/explicit_animations/size_transition_demo.dart';
@@ -49,6 +51,14 @@ class ExplicitAnimationsHome extends StatelessWidget {
             LessonNavigationButton(
               buttonText: "Tween Animation Builder Demo",
               navigateToPage: TweenAnimationBuilderDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Default TextStyle Transition Demo",
+              navigateToPage: DefaultTextstyleTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Indexed Stack Transition Demo",
+              navigateToPage: IndexedStackTransitionDemo(),
             ),
           ],
         ),
