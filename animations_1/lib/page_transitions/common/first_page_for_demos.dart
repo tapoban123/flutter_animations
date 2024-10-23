@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
 
-class SecondPageForDemos extends StatelessWidget {
-  final Color pageColor;
+class FirstPageForDemos extends StatelessWidget {
+  final VoidCallback onTap;
 
-  const SecondPageForDemos({
+  const FirstPageForDemos({
     super.key,
-    this.pageColor = Colors.indigo,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: pageColor,
       appBar: AppBar(
-        title: const Text("Second Page"),
+        title: const Text("First Page"),
         centerTitle: true,
       ),
       body: Center(
         child: ElevatedButton(
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
+          onPressed: onTap,
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.purple,
+            backgroundColor: Colors.green,
             fixedSize: const Size(180, 60),
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
           ),
           child: const Text(
-            "Go Back",
+            "Go to Second Page",
             style: TextStyle(color: Colors.white),
           ),
         ),

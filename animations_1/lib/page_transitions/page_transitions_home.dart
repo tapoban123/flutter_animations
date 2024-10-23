@@ -1,4 +1,5 @@
 import 'package:animations_1/page_transitions/page_fade_transition_demo.dart';
+import 'package:animations_1/page_transitions/page_rotation_transition_demo.dart';
 import 'package:animations_1/page_transitions/page_scale_transition_demo.dart';
 import 'package:animations_1/widgets/lesson_navigation_button.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,10 @@ class PageTransitionsHome extends StatelessWidget {
             LessonNavigationButton(
               buttonText: "Page Scale Transition",
               navigateToPage: PageScaleTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Page Rotation Transition",
+              navigateToPage: PageRotationTransitionDemo(),
             ),
           ],
         ),
