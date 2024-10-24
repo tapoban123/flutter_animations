@@ -1,6 +1,10 @@
 import 'package:animations_1/page_transitions/page_fade_transition_demo.dart';
+import 'package:animations_1/page_transitions/page_mix_fade_size_transition_demo.dart';
+import 'package:animations_1/page_transitions/page_mix_scale_rotate_demo.dart';
 import 'package:animations_1/page_transitions/page_rotation_transition_demo.dart';
 import 'package:animations_1/page_transitions/page_scale_transition_demo.dart';
+import 'package:animations_1/page_transitions/page_size_transition_demo.dart';
+import 'package:animations_1/page_transitions/page_slide_transition_demo.dart';
 import 'package:animations_1/widgets/lesson_navigation_button.dart';
 import 'package:flutter/material.dart';
 
@@ -29,6 +33,22 @@ class PageTransitionsHome extends StatelessWidget {
             LessonNavigationButton(
               buttonText: "Page Rotation Transition",
               navigateToPage: PageRotationTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Page Slide Transition",
+              navigateToPage: PageSlideTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Page Size Transition",
+              navigateToPage: PageSizeTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Page Mix Size Fade Transition",
+              navigateToPage: PageMixFadeSizeTransitionDemo(),
+            ),
+            LessonNavigationButton(
+              buttonText: "Page Mix Scale Rotation Transition",
+              navigateToPage: PageMixScaleRotateDemo(),
             ),
           ],
         ),

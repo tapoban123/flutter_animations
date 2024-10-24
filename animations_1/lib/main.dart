@@ -1,3 +1,4 @@
+import "package:animations_1/custom_painter_animations/custom_painter_animations_home.dart";
 import "package:animations_1/explicit_animations/explicit_animations_home.dart";
 import "package:animations_1/implicit_animations/implicit_animations_home.dart";
 import "package:animations_1/page_transitions/page_transitions_home.dart";
@@ -56,6 +57,21 @@ class _HomePageState extends State<HomePage> {
             AnimationNavigationButton(
               buttonColor: Colors.greenAccent,
               buttonText: "Page Transition Animations",
+              navigateToPage: PageTransitionsHome(),
+            ),
+            AnimationNavigationButton(
+              buttonColor: Colors.blueAccent,
+              buttonText: "Custom Painter Animations",
+              navigateToPage: CustomPainterAnimationsHome(),
+            ),
+            AnimationNavigationButton(
+              buttonColor: Colors.deepOrange,
+              buttonText: "Lottie Animations",
+              navigateToPage: PageTransitionsHome(),
+            ),
+            AnimationNavigationButton(
+              buttonColor: Colors.brown,
+              buttonText: "Rive Animations",
               navigateToPage: PageTransitionsHome(),
             ),
           ],
