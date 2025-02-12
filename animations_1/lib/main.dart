@@ -1,7 +1,9 @@
 import "package:animations_1/custom_painter_animations/custom_painter_animations_home.dart";
 import "package:animations_1/explicit_animations/explicit_animations_home.dart";
 import "package:animations_1/implicit_animations/implicit_animations_home.dart";
+import "package:animations_1/lottie_animations/lottie_animation_home.dart";
 import "package:animations_1/page_transitions/page_transitions_home.dart";
+import "package:animations_1/rive_animations/rive_animations_home.dart";
 import "package:animations_1/widgets/animation_navigation_button.dart";
 import "package:flutter/material.dart";
 
@@ -67,12 +69,12 @@ class _HomePageState extends State<HomePage> {
             AnimationNavigationButton(
               buttonColor: Colors.deepOrange,
               buttonText: "Lottie Animations",
-              navigateToPage: PageTransitionsHome(),
+              navigateToPage: LottieAnimationHome(),
             ),
             AnimationNavigationButton(
               buttonColor: Colors.brown,
               buttonText: "Rive Animations",
-              navigateToPage: PageTransitionsHome(),
+              navigateToPage: RiveAnimationsHome(),
             ),
           ],
         ),

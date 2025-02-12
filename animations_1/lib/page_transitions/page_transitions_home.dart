@@ -1,3 +1,4 @@
+import 'package:animations_1/custom_painter_animations/custom_painter_animation.dart';
 import 'package:animations_1/page_transitions/page_fade_transition_demo.dart';
 import 'package:animations_1/page_transitions/page_mix_fade_size_transition_demo.dart';
 import 'package:animations_1/page_transitions/page_mix_scale_rotate_demo.dart';
@@ -48,7 +49,7 @@ class PageTransitionsHome extends StatelessWidget {
             ),
             LessonNavigationButton(
               buttonText: "Page Mix Scale Rotation Transition",
-              navigateToPage: PageMixScaleRotateDemo(),
+              navigateToPage: CustomPainterAnimation(),
             ),
           ],
         ),
